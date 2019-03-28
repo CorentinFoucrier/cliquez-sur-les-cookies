@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cookie clicker !</title>
+		<meta charset="utf-8">
+	</head>
+	<body onload="activationBoutons()">
+		<h1>Cliquez sur le cookie !</h1>
+		<hr>
+		<div id="affichage">
+			<p>Cookies: <span id="score">0</span></p>
+		</div>
+		<button onclick="ajouterCookies()">Ajouter <br /> cookie</button>
+		<button id="multiplicateur" onclick="augmenterMultiplicateur()" disabled>Multiplier x1<br />Coût: 50</button>
+		<button id="autoclick" onclick="achatAutoClick()" disabled>Acheter un autoclick (1cps) <br /> Coût: 500</button>
+		<button id="bonus" onclick="achatBonus()" disabled>Acheter 200% de bonus<br />Coût: 5000 <span id="timer">(30 sec)</span></button>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
